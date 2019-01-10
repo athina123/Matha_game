@@ -1,0 +1,183 @@
+/*styling.css*/
+html{
+    height: 100%;
+    background: radial-gradient(circle, #ffb3b3
+, #ffe6e6);
+    background: -webkit-radial-gradient(circle, #ffb3b3
+, #ffe6e6);
+    background: -o-radial-gradient(circle, #ffb3b3
+, #ffe6e6);
+    background: -moz-radial-gradient(circle, #ffb3b3
+, #ffe6e6);
+}
+
+#container{
+    height: 550px;
+    width: 1000px;
+    background-color:  #990000;
+    margin: 5px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px #009de4;
+    -moz-box-shadow: 5px #009de4;
+    -webkit-box-shadow: 5px #009de4;
+/*        box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]*/
+    position: relative;
+}
+
+#score{
+    background-color: #ffcccc;
+    color: black;
+    padding: 11px;
+    position: absolute;
+    left: 900px;
+    box-shadow: 0px 4px 0px #9da853;
+    -moz-box-shadow: 0px 4px 0px #9da853;
+    -webkit-box-shadow: 0px 4px 0px #9da853;
+}
+
+#correct{
+    position: absolute;
+    left: 450px;
+    background-color: #ffcccc;
+    color: black;
+    padding: 15px;
+    display: none;
+}
+
+#wrong{
+    position: absolute;
+    left: 450px;
+    background-color: #ffcccc;
+    color: black;
+    padding: 15px;
+    display: none;
+}
+
+#question{
+    width: 800px;
+    height: 250px;
+    margin: 50px auto 10px auto;
+    background-color:  #ffe6e6;
+    box-shadow: 0px 4px #535aa8;
+    -moz-box-shadow: 0px 4px #535aa8;
+    -webkit-box-shadow: 0px 4px #535aa8;
+    font-size: 200px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+}
+
+#instruction{
+    width: 750px;
+    height: 50px;
+    background-color:  #ff4d4d;
+    margin: 25px auto;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0px 4px #8153a8;
+    -moz-box-shadow: 0px 4px #8153a8;
+    -webkit-box-shadow: 0px 4px #8153a8;
+}
+
+#choices{
+    width: 700px;
+    height: 100px;
+    margin: 5px auto;
+}
+
+.box{
+    width: 150px;
+    height: 90px;
+    background-color: white;
+    float: left;
+    margin-right: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.box:hover, #startreset:hover{
+/*    background-color: #9C89F6;*/
+/*    color: white;*/
+/*    box-shadow: 0px 4px #6b54d3;*/
+/*    -moz-box-shadow: 0px 4px #6b54d3;*/
+/*    -webkit-box-shadow: 0px 4px #6b54d3;*/
+}
+
+.box:active, #startreset:active{
+    background-color: #9C89F6;
+    color: white;
+    box-shadow: 0px 0px #6b54d3;
+    -moz-box-shadow: 0px 0px #6b54d3;
+    -webkit-box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+}
+#box4{
+    margin-right: 0;
+}
+
+#startreset{
+    width: 150px;
+    padding: 15px;
+    background-color: #4d2600;
+    color:white;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 7px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 7px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+#timeremaining{
+    width: 200px;
+    padding: 10px;
+    position: absolute;
+    top: 525px;
+    left: 700px;
+    background-color: #4d3900	;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 7px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 7px rgba(0, 0, 0, 0.2);
+/*    visibility: hidden;*/
+    display: none;
+}
+
+#gameOver{
+    height: 400px;
+    width: 950px;
+    background: linear-gradient(#F3CA6B, #F3706C);
+    background: -webkit-linear-gradient(#F3CA6B, #F3706C);
+    background: -o-linear-gradient(#F3CA6B, #F3706C);
+    background: -moz-linear-gradient(#F3CA6B, #F3706C);
+    color: black;
+    font-size: 4.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 150px;
+    left: 45px;
+    z-index: 2;
+    display: none;
+
+}
